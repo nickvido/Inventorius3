@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AssetEditViewController : UIViewController
-
+@interface AssetEditViewController : UIViewController <UIImagePickerControllerDelegate>
+@property (strong, nonatomic) IBOutlet UISwitch *m_assetSwitchButton;
+@property (strong, nonatomic) IBOutlet UIButton *m_imageButton;
+@property (nonatomic, retain) UIImageView * selectedImage;
+@property (strong, nonatomic) UIImagePickerController *picker;
 @end

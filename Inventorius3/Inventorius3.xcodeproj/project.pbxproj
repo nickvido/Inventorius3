@@ -300,6 +300,7 @@
 		526EDB911665881F00C1BF80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Inventorius3/Inventorius3-Prefix.pch";
 				INFOPLIST_FILE = "Inventorius3/Inventorius3-Info.plist";
@@ -311,6 +312,7 @@
 		526EDB921665881F00C1BF80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Inventorius3/Inventorius3-Prefix.pch";
 				INFOPLIST_FILE = "Inventorius3/Inventorius3-Info.plist";
