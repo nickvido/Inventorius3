@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12B2100" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
@@ -19,10 +19,10 @@
             </objects>
             <point key="canvasLocation" x="-1" y="64"/>
         </scene>
-        <!--Inventory List View Controller - Master-->
+        <!--Inventory List View Controller - Inventories-->
         <scene sceneID="18">
             <objects>
-                <tableViewController storyboardIdentifier="" title="Master" id="12" customClass="InventoryListViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="" title="Inventories" id="12" customClass="InventoryListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="13">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,9 +57,9 @@
                             <outlet property="delegate" destination="12" id="15"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Master" id="36"/>
+                    <navigationItem key="navigationItem" title="Inventories" id="36"/>
                     <connections>
-                        <segue destination="cwJ-vm-8l9" kind="push" id="l1O-yt-4ea"/>
+                        <segue destination="cwJ-vm-8l9" kind="push" identifier="SegueToInventoryCreate" id="l1O-yt-4ea"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
@@ -159,10 +159,10 @@
             </objects>
             <point key="canvasLocation" x="1386" y="74"/>
         </scene>
-        <!--Inventory Create View Controller-->
+        <!--Inventory Create View Controller - Create Inventory-->
         <scene sceneID="yLW-Jc-VLm">
             <objects>
-                <viewController id="cwJ-vm-8l9" customClass="InventoryCreateViewController" sceneMemberID="viewController">
+                <viewController title="Create Inventory" id="cwJ-vm-8l9" customClass="InventoryCreateViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Fb-89-KcY">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
