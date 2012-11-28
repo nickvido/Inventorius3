@@ -12,6 +12,8 @@
 		07EF550716659B2400A37F64 /* Inventory.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EF550616659B2400A37F64 /* Inventory.m */; };
 		07EF550A16659B2400A37F64 /* Container.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EF550916659B2400A37F64 /* Container.m */; };
 		07EF550D16659B2400A37F64 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EF550C16659B2400A37F64 /* Item.m */; };
+		07EF550F1665B5BB00A37F64 /* inventory_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 07EF550E1665B5BB00A37F64 /* inventory_icon.png */; };
+		07EF55111665B5E800A37F64 /* inventory_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 07EF55101665B5E800A37F64 /* inventory_icon.png */; };
 		526EDB691665881F00C1BF80 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 526EDB681665881F00C1BF80 /* UIKit.framework */; };
 		526EDB6B1665881F00C1BF80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 526EDB6A1665881F00C1BF80 /* Foundation.framework */; };
 		526EDB6D1665881F00C1BF80 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 526EDB6C1665881F00C1BF80 /* CoreGraphics.framework */; };
@@ -43,6 +45,8 @@
 		07EF550916659B2400A37F64 /* Container.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Container.m; sourceTree = "<group>"; };
 		07EF550B16659B2400A37F64 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		07EF550C16659B2400A37F64 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		07EF550E1665B5BB00A37F64 /* inventory_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inventory_icon.png; sourceTree = "<group>"; };
+		07EF55101665B5E800A37F64 /* inventory_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inventory_icon.png; sourceTree = "<group>"; };
 		526EDB641665881F00C1BF80 /* Inventorius3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inventorius3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		526EDB681665881F00C1BF80 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		526EDB6A1665881F00C1BF80 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -127,6 +131,7 @@
 		526EDB591665881F00C1BF80 = {
 			isa = PBXGroup;
 			children = (
+				07EF55101665B5E800A37F64 /* inventory_icon.png */,
 				526EDB701665881F00C1BF80 /* Inventorius3 */,
 				526EDB671665881F00C1BF80 /* Frameworks */,
 				526EDB651665881F00C1BF80 /* Products */,
@@ -170,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				526EDB721665881F00C1BF80 /* Inventorius3-Info.plist */,
+				07EF550E1665B5BB00A37F64 /* inventory_icon.png */,
 				526EDB731665881F00C1BF80 /* InfoPlist.strings */,
 				526EDB761665881F00C1BF80 /* main.m */,
 				526EDB781665881F00C1BF80 /* Inventorius3-Prefix.pch */,
@@ -236,6 +242,8 @@
 				526EDB7F1665881F00C1BF80 /* Default@2x.png in Resources */,
 				526EDB811665881F00C1BF80 /* Default-568h@2x.png in Resources */,
 				526EDB841665881F00C1BF80 /* MainStoryboard.storyboard in Resources */,
+				07EF550F1665B5BB00A37F64 /* inventory_icon.png in Resources */,
+				07EF55111665B5E800A37F64 /* inventory_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
