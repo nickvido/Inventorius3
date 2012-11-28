@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController
+@interface InventoryDetailViewController : UICollectionViewController
 
 @property (strong, nonatomic) id detailItem;
 

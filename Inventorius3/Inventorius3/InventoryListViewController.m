@@ -6,15 +6,15 @@
 //  Copyright (c) 2012 unit91. All rights reserved.
 //
 
-#import "MasterViewController.h"
+#import "InventoryListViewController.h"
 
-#import "DetailViewController.h"
+#import "InventoryDetailViewController.h"
 
-@interface MasterViewController ()
+@interface InventoryListViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
 
-@implementation MasterViewController
+@implementation InventoryListViewController
 
 - (void)awakeFromNib
 {

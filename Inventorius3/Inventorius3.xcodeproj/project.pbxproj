@@ -19,8 +19,12 @@
 		526EDB811665881F00C1BF80 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 526EDB801665881F00C1BF80 /* Default-568h@2x.png */; };
 		526EDB841665881F00C1BF80 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526EDB821665881F00C1BF80 /* MainStoryboard.storyboard */; };
 		526EDB871665881F00C1BF80 /* Inventorius3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 526EDB851665881F00C1BF80 /* Inventorius3.xcdatamodeld */; };
-		526EDB8A1665881F00C1BF80 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526EDB891665881F00C1BF80 /* MasterViewController.m */; };
-		526EDB8D1665881F00C1BF80 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526EDB8C1665881F00C1BF80 /* DetailViewController.m */; };
+		526EDB8A1665881F00C1BF80 /* InventoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526EDB891665881F00C1BF80 /* InventoryListViewController.m */; };
+		526EDB8D1665881F00C1BF80 /* InventoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526EDB8C1665881F00C1BF80 /* InventoryDetailViewController.m */; };
+		526EDB9516658ABD00C1BF80 /* InventoryCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526EDB9416658ABD00C1BF80 /* InventoryCreateViewController.m */; };
+		526EDB9916658AF200C1BF80 /* AssetEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526EDB9816658AF200C1BF80 /* AssetEditViewController.m */; };
+		526EDB9F16658B2700C1BF80 /* ContainerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526EDB9E16658B2700C1BF80 /* ContainerDetailViewController.m */; };
+		526EDBA216658B3D00C1BF80 /* ItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526EDBA116658B3D00C1BF80 /* ItemDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,10 +44,18 @@
 		526EDB801665881F00C1BF80 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		526EDB831665881F00C1BF80 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		526EDB861665881F00C1BF80 /* Inventorius3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Inventorius3.xcdatamodel; sourceTree = "<group>"; };
-		526EDB881665881F00C1BF80 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		526EDB891665881F00C1BF80 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		526EDB8B1665881F00C1BF80 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		526EDB8C1665881F00C1BF80 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		526EDB881665881F00C1BF80 /* InventoryListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InventoryListViewController.h; sourceTree = "<group>"; };
+		526EDB891665881F00C1BF80 /* InventoryListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InventoryListViewController.m; sourceTree = "<group>"; };
+		526EDB8B1665881F00C1BF80 /* InventoryDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InventoryDetailViewController.h; sourceTree = "<group>"; };
+		526EDB8C1665881F00C1BF80 /* InventoryDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InventoryDetailViewController.m; sourceTree = "<group>"; };
+		526EDB9316658ABD00C1BF80 /* InventoryCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InventoryCreateViewController.h; path = ../InventoryCreateViewController.h; sourceTree = "<group>"; };
+		526EDB9416658ABD00C1BF80 /* InventoryCreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InventoryCreateViewController.m; path = ../InventoryCreateViewController.m; sourceTree = "<group>"; };
+		526EDB9716658AF200C1BF80 /* AssetEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetEditViewController.h; sourceTree = "<group>"; };
+		526EDB9816658AF200C1BF80 /* AssetEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetEditViewController.m; sourceTree = "<group>"; };
+		526EDB9D16658B2700C1BF80 /* ContainerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerDetailViewController.h; sourceTree = "<group>"; };
+		526EDB9E16658B2700C1BF80 /* ContainerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerDetailViewController.m; sourceTree = "<group>"; };
+		526EDBA016658B3D00C1BF80 /* ItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDetailViewController.h; sourceTree = "<group>"; };
+		526EDBA116658B3D00C1BF80 /* ItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,12 +106,20 @@
 			children = (
 				526EDB791665881F00C1BF80 /* AppDelegate.h */,
 				526EDB7A1665881F00C1BF80 /* AppDelegate.m */,
-				526EDB821665881F00C1BF80 /* MainStoryboard.storyboard */,
-				526EDB881665881F00C1BF80 /* MasterViewController.h */,
-				526EDB891665881F00C1BF80 /* MasterViewController.m */,
-				526EDB8B1665881F00C1BF80 /* DetailViewController.h */,
-				526EDB8C1665881F00C1BF80 /* DetailViewController.m */,
+				526EDB9D16658B2700C1BF80 /* ContainerDetailViewController.h */,
+				526EDB9E16658B2700C1BF80 /* ContainerDetailViewController.m */,
+				526EDB8B1665881F00C1BF80 /* InventoryDetailViewController.h */,
+				526EDB8C1665881F00C1BF80 /* InventoryDetailViewController.m */,
+				526EDB9716658AF200C1BF80 /* AssetEditViewController.h */,
+				526EDB9816658AF200C1BF80 /* AssetEditViewController.m */,
 				526EDB851665881F00C1BF80 /* Inventorius3.xcdatamodeld */,
+				526EDB9316658ABD00C1BF80 /* InventoryCreateViewController.h */,
+				526EDB9416658ABD00C1BF80 /* InventoryCreateViewController.m */,
+				526EDBA016658B3D00C1BF80 /* ItemDetailViewController.h */,
+				526EDBA116658B3D00C1BF80 /* ItemDetailViewController.m */,
+				526EDB821665881F00C1BF80 /* MainStoryboard.storyboard */,
+				526EDB881665881F00C1BF80 /* InventoryListViewController.h */,
+				526EDB891665881F00C1BF80 /* InventoryListViewController.m */,
 				526EDB711665881F00C1BF80 /* Supporting Files */,
 			);
 			path = Inventorius3;
@@ -188,8 +208,12 @@
 				526EDB771665881F00C1BF80 /* main.m in Sources */,
 				526EDB7B1665881F00C1BF80 /* AppDelegate.m in Sources */,
 				526EDB871665881F00C1BF80 /* Inventorius3.xcdatamodeld in Sources */,
-				526EDB8A1665881F00C1BF80 /* MasterViewController.m in Sources */,
-				526EDB8D1665881F00C1BF80 /* DetailViewController.m in Sources */,
+				526EDB8A1665881F00C1BF80 /* InventoryListViewController.m in Sources */,
+				526EDB8D1665881F00C1BF80 /* InventoryDetailViewController.m in Sources */,
+				526EDB9516658ABD00C1BF80 /* InventoryCreateViewController.m in Sources */,
+				526EDB9916658AF200C1BF80 /* AssetEditViewController.m in Sources */,
+				526EDB9F16658B2700C1BF80 /* ContainerDetailViewController.m in Sources */,
+				526EDBA216658B3D00C1BF80 /* ItemDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

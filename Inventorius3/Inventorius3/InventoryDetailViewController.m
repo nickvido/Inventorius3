@@ -6,13 +6,13 @@
 //  Copyright (c) 2012 unit91. All rights reserved.
 //
 
-#import "DetailViewController.h"
+#import "InventoryDetailViewController.h"
 
-@interface DetailViewController ()
+@interface InventoryDetailViewController ()
 - (void)configureView;
 @end
 
-@implementation DetailViewController
+@implementation InventoryDetailViewController
 
 #pragma mark - Managing the detail item
 
