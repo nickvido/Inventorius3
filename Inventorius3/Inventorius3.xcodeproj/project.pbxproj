@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07EF550116659B2400A37F64 /* Owner.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EF550016659B2400A37F64 /* Owner.m */; };
+		07EF550416659B2400A37F64 /* Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EF550316659B2400A37F64 /* Asset.m */; };
+		07EF550716659B2400A37F64 /* Inventory.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EF550616659B2400A37F64 /* Inventory.m */; };
+		07EF550A16659B2400A37F64 /* Container.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EF550916659B2400A37F64 /* Container.m */; };
+		07EF550D16659B2400A37F64 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EF550C16659B2400A37F64 /* Item.m */; };
 		526EDB691665881F00C1BF80 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 526EDB681665881F00C1BF80 /* UIKit.framework */; };
 		526EDB6B1665881F00C1BF80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 526EDB6A1665881F00C1BF80 /* Foundation.framework */; };
 		526EDB6D1665881F00C1BF80 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 526EDB6C1665881F00C1BF80 /* CoreGraphics.framework */; };
@@ -28,6 +33,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07EF54FF16659B2400A37F64 /* Owner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Owner.h; sourceTree = "<group>"; };
+		07EF550016659B2400A37F64 /* Owner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Owner.m; sourceTree = "<group>"; };
+		07EF550216659B2400A37F64 /* Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Asset.h; sourceTree = "<group>"; };
+		07EF550316659B2400A37F64 /* Asset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asset.m; sourceTree = "<group>"; };
+		07EF550516659B2400A37F64 /* Inventory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Inventory.h; sourceTree = "<group>"; };
+		07EF550616659B2400A37F64 /* Inventory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Inventory.m; sourceTree = "<group>"; };
+		07EF550816659B2400A37F64 /* Container.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Container.h; sourceTree = "<group>"; };
+		07EF550916659B2400A37F64 /* Container.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Container.m; sourceTree = "<group>"; };
+		07EF550B16659B2400A37F64 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		07EF550C16659B2400A37F64 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		526EDB641665881F00C1BF80 /* Inventorius3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inventorius3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		526EDB681665881F00C1BF80 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		526EDB6A1665881F00C1BF80 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -92,6 +107,23 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
+		07EF54FE16659AFC00A37F64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07EF550B16659B2400A37F64 /* Item.h */,
+				07EF550C16659B2400A37F64 /* Item.m */,
+				07EF550816659B2400A37F64 /* Container.h */,
+				07EF550916659B2400A37F64 /* Container.m */,
+				07EF550516659B2400A37F64 /* Inventory.h */,
+				07EF550616659B2400A37F64 /* Inventory.m */,
+				07EF550216659B2400A37F64 /* Asset.h */,
+				07EF550316659B2400A37F64 /* Asset.m */,
+				07EF54FF16659B2400A37F64 /* Owner.h */,
+				07EF550016659B2400A37F64 /* Owner.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		526EDB591665881F00C1BF80 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +155,7 @@
 		526EDB701665881F00C1BF80 /* Inventorius3 */ = {
 			isa = PBXGroup;
 			children = (
+				07EF54FE16659AFC00A37F64 /* Model */,
 				07EF54F816658FBA00A37F64 /* ViewControllers */,
 				526EDB791665881F00C1BF80 /* AppDelegate.h */,
 				526EDB7A1665881F00C1BF80 /* AppDelegate.m */,
@@ -222,6 +255,11 @@
 				526EDB9916658AF200C1BF80 /* AssetEditViewController.m in Sources */,
 				526EDB9F16658B2700C1BF80 /* ContainerDetailViewController.m in Sources */,
 				526EDBA216658B3D00C1BF80 /* ItemDetailViewController.m in Sources */,
+				07EF550116659B2400A37F64 /* Owner.m in Sources */,
+				07EF550416659B2400A37F64 /* Asset.m in Sources */,
+				07EF550716659B2400A37F64 /* Inventory.m in Sources */,
+				07EF550A16659B2400A37F64 /* Container.m in Sources */,
+				07EF550D16659B2400A37F64 /* Item.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

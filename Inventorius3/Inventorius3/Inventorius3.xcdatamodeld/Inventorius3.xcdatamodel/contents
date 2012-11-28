@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Event">
-        <attribute name="timeStamp" optional="YES" attributeType="Date"/>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Asset" representedClassName="Asset" syncable="YES">
+        <attribute name="strDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="strName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Container" representedClassName="Container" parentEntity="Asset" syncable="YES">
+        <relationship name="assets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Asset" syncable="YES"/>
+    </entity>
+    <entity name="Inventory" representedClassName="Inventory" parentEntity="Asset" syncable="YES">
+        <relationship name="assets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Asset" syncable="YES"/>
+        <relationship name="owner" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Owner" syncable="YES"/>
+    </entity>
+    <entity name="Item" representedClassName="Item" parentEntity="Asset" syncable="YES">
+        <attribute name="authorizedIssue" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="nsn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="unitOfIssue" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="Owner" representedClassName="Owner" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Event" positionX="261" positionY="189" width="128" height="60"/>
+        <element name="Inventory" positionX="135" positionY="225" width="128" height="73"/>
+        <element name="Asset" positionX="369" positionY="105" width="128" height="75"/>
+        <element name="Container" positionX="171" positionY="111" width="128" height="58"/>
+        <element name="Item" positionX="160" positionY="36" width="128" height="103"/>
+        <element name="Owner" positionX="-27" positionY="126" width="128" height="60"/>
     </elements>
 </model>

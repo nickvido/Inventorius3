@@ -10,6 +10,8 @@
 
 #import <CoreData/CoreData.h>
 
+#import "Inventory.h"
+
 @interface InventoryListViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
