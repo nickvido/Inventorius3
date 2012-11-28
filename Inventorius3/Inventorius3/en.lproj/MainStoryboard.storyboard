@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12B2100" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
@@ -73,7 +73,41 @@
                     <view key="view" contentMode="scaleToFill" id="Y5F-Op-pPc">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7Z-AY-1y7">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="xHc-Ke-sRz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="Default.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Belongs To:  Container/Inventory" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="160" translatesAutoresizingMaskIntoConstraints="NO" id="als-Kr-NOO">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="2my-Gj-CFk"/>
+                                    <constraint firstAttribute="width" constant="160" id="nma-7O-MfV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pap-Wf-aFt"/>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pap-Wf-aFt" firstAttribute="top" secondItem="als-Kr-NOO" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="EQM-Ze-tIn"/>
+                            <constraint firstItem="H7Z-AY-1y7" firstAttribute="top" secondItem="Y5F-Op-pPc" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Erz-Lq-nSQ"/>
+                            <constraint firstItem="Pap-Wf-aFt" firstAttribute="centerX" secondItem="als-Kr-NOO" secondAttribute="centerX" type="default" id="KZC-Cb-19r"/>
+                            <constraint firstItem="als-Kr-NOO" firstAttribute="bottom" secondItem="H7Z-AY-1y7" secondAttribute="bottom" type="default" id="WIz-im-hUG"/>
+                            <constraint firstItem="als-Kr-NOO" firstAttribute="top" secondItem="Y5F-Op-pPc" secondAttribute="top" constant="14" id="X0Y-BG-NWm"/>
+                            <constraint firstItem="als-Kr-NOO" firstAttribute="leading" secondItem="Y5F-Op-pPc" secondAttribute="leading" constant="122" id="X3a-ru-p9a"/>
+                            <constraint firstItem="H7Z-AY-1y7" firstAttribute="leading" secondItem="Y5F-Op-pPc" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="wiI-DY-5rr"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MFT-Qu-PbJ"/>
                 </viewController>
@@ -187,15 +221,33 @@
             <point key="canvasLocation" x="934" y="784"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Default.png" width="320" height="480"/>
+    </resources>
     <classes>
+        <class className="AssetEditViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AssetEditViewController.h"/>
+        </class>
         <class className="ContainerDetailViewController" superclassName="UICollectionViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ContainerDetailViewController.h"/>
         </class>
         <class className="InventoryCreateViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/InventoryCreateViewController.h"/>
         </class>
+        <class className="InventoryDetailViewController" superclassName="UICollectionViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InventoryDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="detailDescriptionLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="InventoryListViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InventoryListViewController.h"/>
+        </class>
         <class className="ItemDetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ItemDetailViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
         <class className="UICollectionReusableView" superclassName="UIView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
