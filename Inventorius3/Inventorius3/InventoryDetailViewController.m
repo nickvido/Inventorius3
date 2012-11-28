@@ -31,9 +31,10 @@
     // Update the user interface for the detail item.
 
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"timeStamp"] description];
+        self.detailTextLabel = [[self.detailItem valueForKey:@"timeStamp"] description];
     }
 }
+
 
 - (void)viewDidLoad
 {
@@ -46,6 +47,29 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UICollectionViewDataSource
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 1;//[birds count] / 2;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 1;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    UIButton* button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    button.frame = CGRectMake(0, 0, 45, 45);
+    [button setTitle:self.detailTextLabel forState:UIControlStateNormal];
+    [cell addSubview:button];
+    //cell.imageView.image = [UIImage imageNamed:bird.imageName];
+    return cell;
 }
 
 @end
