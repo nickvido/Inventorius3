@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12B2100" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
@@ -59,7 +59,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Master" id="36"/>
                     <connections>
-                        <segue destination="cwJ-vm-8l9" kind="push" id="l1O-yt-4ea"/>
+                        <segue destination="cwJ-vm-8l9" kind="push" identifier="SegueToInventoryCreate" id="l1O-yt-4ea"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
@@ -156,10 +156,10 @@
             </objects>
             <point key="canvasLocation" x="1386" y="74"/>
         </scene>
-        <!--Inventory Create View Controller-->
+        <!--Inventory Create View Controller - Create Inventory-->
         <scene sceneID="yLW-Jc-VLm">
             <objects>
-                <viewController id="cwJ-vm-8l9" customClass="InventoryCreateViewController" sceneMemberID="viewController">
+                <viewController title="Create Inventory" id="cwJ-vm-8l9" customClass="InventoryCreateViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Fb-89-KcY">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -188,11 +188,23 @@
         </scene>
     </scenes>
     <classes>
+        <class className="AssetEditViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AssetEditViewController.h"/>
+        </class>
         <class className="ContainerDetailViewController" superclassName="UICollectionViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ContainerDetailViewController.h"/>
         </class>
         <class className="InventoryCreateViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/InventoryCreateViewController.h"/>
+        </class>
+        <class className="InventoryDetailViewController" superclassName="UICollectionViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InventoryDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="detailDescriptionLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="InventoryListViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InventoryListViewController.h"/>
         </class>
         <class className="ItemDetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ItemDetailViewController.h"/>
