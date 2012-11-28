@@ -17,7 +17,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1" y="64"/>
+            <point key="canvasLocation" x="9" y="74"/>
         </scene>
         <!--Inventory List View Controller - Inventories-->
         <scene sceneID="18">
@@ -64,7 +64,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="513" y="64"/>
+            <point key="canvasLocation" x="511" y="74"/>
         </scene>
         <!--Asset Edit View Controller-->
         <scene sceneID="Wg5-Vg-OAJ">
@@ -79,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FxP-5x-4OZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="513" y="779"/>
+            <point key="canvasLocation" x="2238" y="1055"/>
         </scene>
         <!--Inventory Detail View Controller-->
         <scene sceneID="GFj-2A-J51">
@@ -119,7 +119,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GMt-Ky-Ib5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="934" y="74"/>
+            <point key="canvasLocation" x="1462" y="74"/>
         </scene>
         <!--Container Detail View Controller-->
         <scene sceneID="apV-6F-nq3">
@@ -154,7 +154,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DXs-tV-fMt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1386" y="74"/>
+            <point key="canvasLocation" x="2238" y="-386"/>
         </scene>
         <!--Inventory Create View Controller - Create Inventory-->
         <scene sceneID="yLW-Jc-VLm">
@@ -166,10 +166,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="x9K-F9-r6r"/>
+                    <connections>
+                        <segue destination="mVu-k5-E4V" kind="push" id="mWW-ac-861"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V6h-cd-XGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="513" y="-650"/>
+            <point key="canvasLocation" x="985" y="-478"/>
         </scene>
         <!--Item Detail View Controller-->
         <scene sceneID="6B2-so-hxe">
@@ -184,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WeP-9c-cp3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="934" y="784"/>
+            <point key="canvasLocation" x="2238" y="318"/>
         </scene>
     </scenes>
     <classes>
@@ -230,4 +233,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="mWW-ac-861"/>
+    </inferredMetricsTieBreakers>
 </document>
