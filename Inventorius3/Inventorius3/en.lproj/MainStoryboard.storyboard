@@ -47,7 +47,7 @@
                                 </view>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="mVu-k5-E4V" kind="push" id="Zgz-GQ-res"/>
+                                    <segue destination="mVu-k5-E4V" kind="push" identifier="showDetail" id="nmb-Sc-eEE"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -89,20 +89,24 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ycU-Nd-4wW">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="90" height="90"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="DtN-mq-wSz">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="DtN-mq-wSz">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="BsO-Aq-5ys" kind="push" id="Tdj-UL-uBy"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -113,7 +117,6 @@
                     <navigationItem key="navigationItem" id="DcX-8T-yuf"/>
                     <connections>
                         <segue destination="svU-8A-Vza" kind="push" id="A6A-NK-GKB"/>
-                        <segue destination="BsO-Aq-5ys" kind="push" id="VUr-hI-mFo"/>
                         <segue destination="w6Y-EG-z5B" kind="push" id="dco-eg-53o"/>
                     </connections>
                 </collectionViewController>
@@ -188,11 +191,23 @@
         </scene>
     </scenes>
     <classes>
+        <class className="AssetEditViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AssetEditViewController.h"/>
+        </class>
         <class className="ContainerDetailViewController" superclassName="UICollectionViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ContainerDetailViewController.h"/>
         </class>
         <class className="InventoryCreateViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/InventoryCreateViewController.h"/>
+        </class>
+        <class className="InventoryDetailViewController" superclassName="UICollectionViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InventoryDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="detailDescriptionLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="InventoryListViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InventoryListViewController.h"/>
         </class>
         <class className="ItemDetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ItemDetailViewController.h"/>
