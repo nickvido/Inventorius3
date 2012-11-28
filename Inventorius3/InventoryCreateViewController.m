@@ -37,7 +37,7 @@
 
 - (void)createInventory:(id)sender
 {
-    [self performSegueWithIdentifier:@"SegueToInventoryDetail" sender:self];
+    [self performSegueWithIdentifier:@"SegueAfterCreateInventory" sender:self];
 }
 
 
