@@ -73,6 +73,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07EF54F816658FBA00A37F64 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				526EDB9716658AF200C1BF80 /* AssetEditViewController.h */,
+				526EDB9816658AF200C1BF80 /* AssetEditViewController.m */,
+				526EDB9316658ABD00C1BF80 /* InventoryCreateViewController.h */,
+				526EDB9416658ABD00C1BF80 /* InventoryCreateViewController.m */,
+				526EDBA016658B3D00C1BF80 /* ItemDetailViewController.h */,
+				526EDBA116658B3D00C1BF80 /* ItemDetailViewController.m */,
+				526EDB881665881F00C1BF80 /* InventoryListViewController.h */,
+				526EDB891665881F00C1BF80 /* InventoryListViewController.m */,
+				526EDB9D16658B2700C1BF80 /* ContainerDetailViewController.h */,
+				526EDB9E16658B2700C1BF80 /* ContainerDetailViewController.m */,
+				526EDB8B1665881F00C1BF80 /* InventoryDetailViewController.h */,
+				526EDB8C1665881F00C1BF80 /* InventoryDetailViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		526EDB591665881F00C1BF80 = {
 			isa = PBXGroup;
 			children = (
@@ -104,22 +123,11 @@
 		526EDB701665881F00C1BF80 /* Inventorius3 */ = {
 			isa = PBXGroup;
 			children = (
+				07EF54F816658FBA00A37F64 /* ViewControllers */,
 				526EDB791665881F00C1BF80 /* AppDelegate.h */,
 				526EDB7A1665881F00C1BF80 /* AppDelegate.m */,
-				526EDB9D16658B2700C1BF80 /* ContainerDetailViewController.h */,
-				526EDB9E16658B2700C1BF80 /* ContainerDetailViewController.m */,
-				526EDB8B1665881F00C1BF80 /* InventoryDetailViewController.h */,
-				526EDB8C1665881F00C1BF80 /* InventoryDetailViewController.m */,
-				526EDB9716658AF200C1BF80 /* AssetEditViewController.h */,
-				526EDB9816658AF200C1BF80 /* AssetEditViewController.m */,
 				526EDB851665881F00C1BF80 /* Inventorius3.xcdatamodeld */,
-				526EDB9316658ABD00C1BF80 /* InventoryCreateViewController.h */,
-				526EDB9416658ABD00C1BF80 /* InventoryCreateViewController.m */,
-				526EDBA016658B3D00C1BF80 /* ItemDetailViewController.h */,
-				526EDBA116658B3D00C1BF80 /* ItemDetailViewController.m */,
 				526EDB821665881F00C1BF80 /* MainStoryboard.storyboard */,
-				526EDB881665881F00C1BF80 /* InventoryListViewController.h */,
-				526EDB891665881F00C1BF80 /* InventoryListViewController.m */,
 				526EDB711665881F00C1BF80 /* Supporting Files */,
 			);
 			path = Inventorius3;
@@ -330,6 +338,7 @@
 				526EDB921665881F00C1BF80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
