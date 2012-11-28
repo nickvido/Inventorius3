@@ -59,7 +59,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Master" id="36"/>
                     <connections>
-                        <segue destination="cwJ-vm-8l9" kind="push" id="l1O-yt-4ea"/>
+                        <segue destination="cwJ-vm-8l9" kind="push" identifier="SegueToInventoryCreate" id="l1O-yt-4ea"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
@@ -190,10 +190,10 @@
             </objects>
             <point key="canvasLocation" x="1386" y="74"/>
         </scene>
-        <!--Inventory Create View Controller-->
+        <!--Inventory Create View Controller - Create Inventory-->
         <scene sceneID="yLW-Jc-VLm">
             <objects>
-                <viewController id="cwJ-vm-8l9" customClass="InventoryCreateViewController" sceneMemberID="viewController">
+                <viewController title="Create Inventory" id="cwJ-vm-8l9" customClass="InventoryCreateViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Fb-89-KcY">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
