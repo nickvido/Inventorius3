@@ -34,6 +34,7 @@
 		526EDB9916658AF200C1BF80 /* AssetEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526EDB9816658AF200C1BF80 /* AssetEditViewController.m */; };
 		526EDB9F16658B2700C1BF80 /* ContainerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526EDB9E16658B2700C1BF80 /* ContainerDetailViewController.m */; };
 		526EDBA216658B3D00C1BF80 /* ItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526EDBA116658B3D00C1BF80 /* ItemDetailViewController.m */; };
+		52F2FFA91665A11700460CB5 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F2FFA81665A11700460CB5 /* CollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,8 @@
 		526EDB9E16658B2700C1BF80 /* ContainerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerDetailViewController.m; sourceTree = "<group>"; };
 		526EDBA016658B3D00C1BF80 /* ItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDetailViewController.h; sourceTree = "<group>"; };
 		526EDBA116658B3D00C1BF80 /* ItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDetailViewController.m; sourceTree = "<group>"; };
+		52F2FFA71665A11700460CB5 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		52F2FFA81665A11700460CB5 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,7 @@
 		526EDB701665881F00C1BF80 /* Inventorius3 */ = {
 			isa = PBXGroup;
 			children = (
+				52F2FFA51665A05900460CB5 /* UIComponents */,
 				07EF54FE16659AFC00A37F64 /* Model */,
 				07EF54F816658FBA00A37F64 /* ViewControllers */,
 				526EDB791665881F00C1BF80 /* AppDelegate.h */,
@@ -190,6 +194,15 @@
 				526EDB801665881F00C1BF80 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52F2FFA51665A05900460CB5 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				52F2FFA71665A11700460CB5 /* CollectionViewCell.h */,
+				52F2FFA81665A11700460CB5 /* CollectionViewCell.m */,
+			);
+			name = UIComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +289,7 @@
 				07EF550716659B2400A37F64 /* Inventory.m in Sources */,
 				07EF550A16659B2400A37F64 /* Container.m in Sources */,
 				07EF550D16659B2400A37F64 /* Item.m in Sources */,
+				52F2FFA91665A11700460CB5 /* CollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

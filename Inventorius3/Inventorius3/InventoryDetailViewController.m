@@ -7,6 +7,7 @@
 //
 
 #import "InventoryDetailViewController.h"
+#import "CollectionViewCell.h"
 
 @interface InventoryDetailViewController ()
 - (void)configureView;
@@ -63,11 +64,12 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
-    UIButton* button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    button.frame = CGRectMake(0, 0, 45, 45);
-    [button setTitle:self.detailTextLabel forState:UIControlStateNormal];
-    [cell addSubview:button];
+    CollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    cell.label.text = self.detailTextLabel;
+//     button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+//    button.frame = CGRectMake(0, 0, 45, 45);
+//    [button setTitle:self.detailTextLabel forState:UIControlStateNormal];
+//    [cell addSubview:button];
     //cell.imageView.image = [UIImage imageNamed:bird.imageName];
     return cell;
 }
