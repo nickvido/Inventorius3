@@ -30,7 +30,16 @@
 	// Do any additional setup after loading the view.
     
     self.title = @"Create Inventory";
+    
+    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(createInventory:)];
+    self.navigationItem.rightBarButtonItem = doneButton;
 }
+
+- (void)createInventory:(id)sender
+{
+    [self performSegueWithIdentifier:@"SegueToInventoryDetail" sender:self];
+}
+
 
 - (void)didReceiveMemoryWarning
 {

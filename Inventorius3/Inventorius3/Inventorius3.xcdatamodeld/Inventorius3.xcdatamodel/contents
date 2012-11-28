@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Asset" representedClassName="Asset" syncable="YES">
+    <entity name="Asset" representedClassName="Asset" isAbstract="YES" syncable="YES">
         <attribute name="strDescription" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="strName" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
@@ -22,7 +22,7 @@
     </entity>
     <elements>
         <element name="Inventory" positionX="135" positionY="225" width="128" height="73"/>
-        <element name="Asset" positionX="369" positionY="105" width="128" height="75"/>
+        <element name="Asset" positionX="369" positionY="105" width="128" height="73"/>
         <element name="Container" positionX="171" positionY="111" width="128" height="58"/>
         <element name="Item" positionX="160" positionY="36" width="128" height="103"/>
         <element name="Owner" positionX="-27" positionY="126" width="128" height="60"/>

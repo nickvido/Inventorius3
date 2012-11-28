@@ -135,10 +135,10 @@
 		526EDB591665881F00C1BF80 = {
 			isa = PBXGroup;
 			children = (
-				07EF55141665B67C00A37F64 /* inventory_icon_retina.png */,
-				07EF55101665B5E800A37F64 /* inventory_icon.png */,
-				526EDB701665881F00C1BF80 /* Inventorius3 */,
 				526EDB671665881F00C1BF80 /* Frameworks */,
+				526EDB701665881F00C1BF80 /* Inventorius3 */,
+				07EF55101665B5E800A37F64 /* inventory_icon.png */,
+				07EF55141665B67C00A37F64 /* inventory_icon_retina.png */,
 				526EDB651665881F00C1BF80 /* Products */,
 			);
 			sourceTree = "<group>";
